@@ -1,10 +1,10 @@
 import Button from "./Button";
 
-export default function Form({ req, setReq, reqList }) {
+export default function Form({ req, setReq, reqUrls }) {
   return (
     <div>
-      {reqList.map((item) => (
-        <Button item={item} />
+      {reqUrls.map((reqUrl) => (
+        <Button reqUrl={reqUrl} req={req} setReq={setReq} />
       ))}
     </div>
   );
